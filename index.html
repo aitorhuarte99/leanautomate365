@@ -297,7 +297,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
           <span class="hero-card-title">Flujos automatizados activos</span>
           <span class="hero-card-badge badge-green">Power Automate</span>
         </div>
-        <div class="hero-card-metric">24</div>
+        <div class="hero-card-metric">14</div>
         <div class="hero-card-sub">Notificaciones, aprobaciones y reportes automáticos</div>
         <div class="progress-bar"><div class="progress-fill prog-green" style="width:80%"></div></div>
       </div>
@@ -323,7 +323,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
     <div class="section-label">Nuestros Servicios</div>
     <h2>Soluciones a medida <em>según tu empresa</em></h2>
     <p class="section-intro">Selecciona tu modelo de negocio para ver cómo podemos ayudarte a eliminar tareas manuales y exprimir Microsoft 365.</p>
-    
+     
     <!-- SELECTOR INTERACTIVO -->
     <div class="selector-container">
       <button class="selector-btn active" onclick="switchBusinessType('industrial', this)">🏭 Planta Industrial</button>
@@ -410,7 +410,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
           <div class="value-item">
             <div class="value-icon">⚡</div>
             <div class="value-title">Implementación inmediata</div>
-            <div class="value-desc">Soluciones operativas en días, no meses</div>
+            <div class="value-desc">Soluciones operativas en days, no meses</div>
           </div>
           <div class="value-item">
             <div class="value-icon">💡</div>
@@ -501,7 +501,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
     </div>
   </div>
 </section>
-
 <section id="faq" style="background:var(--dark2);border-top:1px solid var(--border)">
   <div class="container">
     <div class="section-label">Preguntas Frecuentes</div>
@@ -519,7 +518,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
           ¿Cuánto tiempo lleva implementar una solución?
           <span class="faq-icon"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4"/></svg></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Dependiendo de la complejidad, entre 1 y 4 semanas. Una aplicación básica de inventario o tareas automatizadas puede estar lista en menos de una semana. Proyectos más complejos con múltiples flujos automatizados pueden requerir 3-4 semanas. Siempre trabajamos con el cliente para priorizar lo que genera valor inmediato.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Dependiendo de la complejidad, entre 1 y 4 semanas. Una aplicación básica de registro de partes de trabajo puede estar lista en menos de una semana. Proyectos más complejos con múltiples flujos automatizados pueden requerir 3-4 semanas. Siempre trabajamos con el cliente para priorizar lo que genera valor inmediato.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -533,7 +532,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
           ¿Puedo ver una demo antes de contratar?
           <span class="faq-icon"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4"/></svg></span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Por supuesto. Ofrecemos una demo de 15 minutos completamente gratuita y sin compromiso donde te mostramos una solución real en funcionamiento. Puedes solicitar la demo directamente por WhatsApp y la agendamos en menos de 24 horas.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Por supuesto. Ofrecemos una demo de 15 minutos completamente gratuita y sin compromiso donde te mostramos una solución real en funcionamiento. Puedes solicitar la demo directamente por WhatsApp y la agendamos en menos de 24 hours.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -545,6 +544,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
     </div>
   </div>
 </section>
+
 
 <section id="contacto" class="contact-section">
   <div class="container">
@@ -568,7 +568,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
         <a href="https://api.whatsapp.com/send?phone=%2B34650769580" class="cta-big">📲 WhatsApp ahora</a>
       </div>
       
- <form action="https://formspree.io/f/mdajzgkg" method="POST" class="contact-form-note">
+      <form action="https://formspree.io/f/mdajzgkg" method="POST" class="contact-form-note">
         <div class="section-label" style="margin-bottom:20px">Envíanos un mensaje</div>
         <div class="form-field">
           <label class="form-label">Nombre</label>
@@ -602,75 +602,10 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:40px 2r
     </div>
   </div>
 </section>
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="logo" style="font-size:18px;margin-bottom:4px">Lean <span>Automate</span> 365</div>
-      <div class="footer-copy">© 2026 Lean Automate 365 · Pamplona, Navarra</div>
-    </div>
-    <div class="footer-links">
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-      <a href="https://api.whatsapp.com/send?phone=%2B34650769580">WhatsApp</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-function setActive(el){
-  document.querySelectorAll('.tab-link').forEach(l=>l.classList.remove('active'));
-  el.classList.add('active');
-}
-function toggleFaq(btn){
-  const item=btn.closest('.faq-item');
-  const isOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
-  if(!isOpen)item.classList.add('open');
-}
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const id=e.target.id;
-      document.querySelectorAll('.tab-link').forEach(l=>{
-        l.classList.toggle('active',l.getAttribute('href')==='#'+id);
-      });
-    }
-  });
-},{threshold:0.3});
-['inicio','servicios','nosotros','caso','faq','contacto'].forEach(id=>{
-  const el=document.getElementById(id);
-  if(el)observer.observe(el);
-});
-
-          <!-- MENÚ DESPLEGABLE INTERACTIVO -->
-          <div class="form-field">
-            <label class="form-label">¿En qué crees que te puedo ayudar?</label>
-            <select class="form-input" name="tipo_ayuda" required>
-              <option value="" disabled selected>Selecciona una opción...</option>
-              <option value="Planta Industrial: GMAO Digital / Mantenimiento">Planta Industrial: GMAO Digital / Mantenimiento</option>
-              <option value="Planta Industrial: Calidad sin papel e inspecciones">Planta Industrial: Calidad sin papel e inspecciones</option>
-              <option value="Pequeña Empresa: Automatizar tareas repetitivas y Excel">Pequeña Empresa: Automatizar tareas repetitivas y Excel</option>
-              <option value="Pequeña Empresa: Gestión documental y archivos en SharePoint">Pequeña Empresa: Gestión documental y archivos en SharePoint</option>
-              <option value="Pequeña Empresa: Gestión de inventario y stock con App">Pequeña Empresa: Gestión de inventario y stock con App</option>
-              <option value="Otro tipo de proyecto a medida">Otro tipo de proyecto a medida</option>
-            </select>
-          </div>
-
-          <div class="form-field">
-            <label class="form-label">Cuéntanos brevemente tu necesidad</label>
-            <textarea class="form-input" name="mensaje" placeholder="Detalla un poco el proceso que te gustaría mejorar..."></textarea>
-          </div>
-          <button type="submit" class="form-submit">Enviar consulta</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-copy">&copy; 2026 Lean Automate 365. Soluciones ágiles para la eficiencia empresarial.</div>
+    <div class="footer-copy">&copy; 2026 Lean Automate 365. Todos los derechos reservados.</div>
     <div class="footer-links">
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
@@ -679,32 +614,30 @@ const observer=new IntersectionObserver(entries=>{
   </div>
 </footer>
 
+<!-- SCRIPTS DE INTERACTIVIDAD (TABS Y FAQ) -->
 <script>
-// Función para cambiar el tipo de negocio de forma interactiva
-function switchBusinessType(type, btnElement) {
-  const buttons = document.querySelectorAll('.selector-btn');
-  buttons.forEach(btn => btn.classList.remove('active'));
+function switchBusinessType(type, btn) {
+  // 1. Gestionar clases del botón del selector
+  document.querySelectorAll('.selector-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
   
-  btnElement.classList.add('active');
-  
-  const contents = document.querySelectorAll('.business-type-content');
-  contents.forEach(content => content.classList.remove('active-content'));
-  
-  const activeContent = document.getElementById('content-' + type);
-  if(activeContent) {
-    activeContent.classList.add('active-content');
+  // 2. Cambiar visibilidad de los bloques de servicios
+  document.querySelectorAll('.business-type-content').forEach(c => c.classList.remove('active-content'));
+  if(type === 'industrial') {
+    document.getElementById('content-industrial').classList.add('active-content');
+  } else if(type === 'pyme') {
+    document.getElementById('content-pyme').classList.add('active-content');
   }
 }
 
-function setActive(link) {
-  const links = document.querySelectorAll('.tab-link');
-  links.forEach(l => l.classList.remove('active'));
-  link.classList.add('active');
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  item.classList.toggle('open');
 }
 
-function toggleFaq(button) {
-  const item = button.parentElement;
-  item.classList.toggle('open');
+function setActive(link) {
+  document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
+  link.classList.add('active');
 }
 </script>
 
